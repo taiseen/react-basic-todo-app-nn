@@ -7,7 +7,7 @@ class TodoAdd extends Component {
         task: ''
     }
 
-    handleTaskAdd = (e) => { 
+    handleTaskAdd = (e) => {
         this.setState({ task: e.target.value });
     }
 
@@ -23,7 +23,7 @@ class TodoAdd extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Add New Todo...</label>
-                    <input type="text" onChange={this.handleTaskAdd} />
+                    <input type="text" onChange={this.handleTaskAdd} value={this.state.task} />
                 </form>
             </div>
         );

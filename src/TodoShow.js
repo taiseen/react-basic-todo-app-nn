@@ -1,13 +1,13 @@
 const TodoShow = ({ todos, deleteTodo }) => {
 
     const task = todos.length ? (
-        todos.map(task => {
+        todos.map(job => {
 
-            const { id, name } = task;
+            const { id, task } = job;
 
             return (
-                <div className="collection-item" key={id} >
-                    <span onClick={() => deleteTodo(id)}>{name}</span>
+                <div className="collection-item" key={id} onClick={() => deleteTodo(id)}>
+                    <span >{task}</span>
                 </div>
             )
         })

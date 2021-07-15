@@ -8,16 +8,20 @@ class App extends Component {
 
     state = {
         todos: [
-            { id: 1, name: 'Buy Milk' },
-            { id: 2, name: 'Buy Egg' },
-            { id: 3, name: 'Buy Tea' },
+            { id: 1, task: 'Buy Milk (DEMO)' },
+            { id: 2, task: 'Buy Egg (DEMO)' },
+            { id: 3, task: 'Buy Tea (DEMO)' },
         ],
     }
 
     addTodo = task => {
-        task.id = Math.floor(Math.random() * 100);
+        task.id = Math.random();
 
-        console.log(task);
+        const todos = [...this.state.todos, task];
+        console.log(todos);
+
+        this.setState({ todos })
+
     }
 
     deleteTodo = id => {
