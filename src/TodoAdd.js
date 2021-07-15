@@ -1,6 +1,5 @@
 import { Component } from 'react';
 
-
 class TodoAdd extends Component {
 
     state = {
@@ -18,7 +17,6 @@ class TodoAdd extends Component {
     }
 
     render() {
-
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>

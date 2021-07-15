@@ -5,7 +5,7 @@
 ## Topic of Focus:
 - Class Base Compo
 - Component Communication
-- Parent Child Data & Function Passing
+- Parent Child Data + Function Passing through props
 
 
 ## Technologies :
@@ -14,5 +14,5 @@ Project is created with:
 * Material CSS
 * React
 
-## RoadMap + Sample
-<img src="./src/img/road-map.png"/>
+## Sample
+<img src="./src/img/demo.png"/>
