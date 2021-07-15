@@ -1,27 +1,18 @@
-12-Jun-2021
+15-July-2021
 
-#  React CRUD App 
+#  Basic Todo React App NN 
 
 ## Topic of Focus:
-- CRUD ( get , post, put , delete )
-- Search
-- Context API
-- Reducer
+- Class Base Compo
+- Component Communication
+- Parent Child Data & Function Passing
+
 
 ## Technologies :
 Project is created with:
 * HTML 
-* Semantic-ui CSS 
+* Material CSS
 * React
-* Axios
-* JSON Server
-
-#
-  `"scripts": {
-    "json-server" : "json-server -w ./src/db/db.json -p 8000",
-  },`
-  * npm run json-server
-#
 
 ## RoadMap + Sample
 <img src="./src/img/road-map.png"/>

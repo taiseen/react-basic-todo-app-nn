@@ -1,14 +1,13 @@
+const TodoShow = ({ todos, deleteTodo }) => {
 
-const TodoShow = ({ tasks }) => {
-
-    const task = tasks.length ? (
-        tasks.map(task => {
+    const task = todos.length ? (
+        todos.map(task => {
 
             const { id, name } = task;
 
             return (
-                <div className="collection-item" key={id}>
-                    <span>{name}</span>
+                <div className="collection-item" key={id} >
+                    <span onClick={() => deleteTodo(id)}>{name}</span>
                 </div>
             )
         })
@@ -16,8 +15,9 @@ const TodoShow = ({ tasks }) => {
         <p className="center red-text">You have no task</p>
     )
 
+
     return (
-        <div className="collection">
+        <div className="todos collection">
             {task}
         </div>
     );

@@ -7,19 +7,14 @@ class TodoAdd extends Component {
         task: ''
     }
 
-    handleTaskAdd = (e) => {
-        this.setState({ [e.target.id]: e.target.value })
+    handleTaskAdd = (e) => { 
+        this.setState({ task: e.target.value });
     }
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const id = Math.floor(Math.random());
-        this.setState(this.state.id)
-        
-        console.log(this.state);
-
-        // this.handleTaskAdd(this.state.task)
-        // this.setState({ task: '' })
+        this.props.addTodo(this.state);
+        this.setState({ task: '' })
     }
 
     render() {
@@ -27,8 +22,8 @@ class TodoAdd extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" id="task" onChange={this.handleTaskAdd} />
-                    <button>Task add</button>
+                    <label>Add New Todo...</label>
+                    <input type="text" onChange={this.handleTaskAdd} />
                 </form>
             </div>
         );
